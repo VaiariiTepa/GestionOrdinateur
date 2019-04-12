@@ -17,7 +17,6 @@ class CreateAssignmentTable extends Migration
             $table->increments('id');
             $table->integer('visitor_id');
             $table->integer('computer_id');
-            $table->integer('openday_id');
             $table->integer('open');
             $table->integer('close');
             $table->timestamps();
