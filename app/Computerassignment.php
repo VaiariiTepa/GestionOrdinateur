@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Visitor extends Model
+class Computerassignment extends Model
 {
     protected $fillable = [
-        'lastname', 'firstname', 'number','email',
+        'visitor_id', 'computer_id', 'open','close',
     ];
 }

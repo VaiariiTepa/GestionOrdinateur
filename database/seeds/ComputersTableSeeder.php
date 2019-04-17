@@ -12,63 +12,27 @@ class ComputersTableSeeder extends Seeder
     public function run()
     {
         DB::table('computers')->insert([
-            'ref' => Str::random(10),
+            'ref' => Str::random(4),
         ]);
 
         DB::table('computers')->insert([
-            'ref' => Str::random(10),
+            'ref' => Str::random(4),
         ]);
 
         DB::table('computers')->insert([
-            'ref' => Str::random(10),
+            'ref' => Str::random(4),
         ]);
 
         DB::table('computers')->insert([
-            'ref' => Str::random(10),
+            'ref' => Str::random(4),
         ]);
 
         DB::table('computers')->insert([
-            'ref' => Str::random(10),
+            'ref' => Str::random(4),
         ]);
 
         DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
-        ]);
-
-        DB::table('computers')->insert([
-            'ref' => Str::random(10),
+            'ref' => Str::random(4),
         ]);
     }
 }

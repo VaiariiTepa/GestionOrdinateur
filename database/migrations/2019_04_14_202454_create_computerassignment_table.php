@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAssignmentTable extends Migration
+class CreateComputerassignmentTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreateAssignmentTable extends Migration
      */
     public function up()
     {
-        Schema::create('computersassignments', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('computerassignments', function (Blueprint $table) {
+            $table->increments('id')->autoIncrement();
             $table->integer('visitor_id');
             $table->integer('computer_id');
             $table->integer('open');
@@ -30,6 +30,6 @@ class CreateAssignmentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('computersassignments');
+        Schema::dropIfExists('computerassignments');
     }
 }

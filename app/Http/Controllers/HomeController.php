@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Visitor;
+use App\Computer;
+use App\Computerassignment;
 use Illuminate\Http\Request;
+
 
 class HomeController extends Controller
 {
@@ -22,11 +25,20 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $test = "hello Vaiarii";
-        $date = date("D");
+    {   
+        //créer un utilisateur
+        $visitor = new Visitor();
+        // $visitor->create($input['firstname'],$input['lastname'],$input['number'],$input['email']);
+        //récupère les utilisateurs
+        $v = $visitor->all();
+        //récupère les ordinateur
+        $computer = new Computer();
+        $c = $computer->all();
+
         return view('home')->with([
-            'vaiarii'=>$test,
-            'date'=>$date]);
+            'visitor'=>$v,
+            'computer'=>$c,
+            ]);
     }
+
 }
